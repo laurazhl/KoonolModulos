@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="85dp"
+
+    android:clickable="true">
+
+    <TextView
+        android:id="@+id/txtFolio"
+        android:layout_width="339dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/txtFecha"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="34dp"
+        android:layout_marginTop="-37dp"
+        android:text="1"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/txtFecha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/txtHora"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="252dp"
+        android:text="02/06/2018"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/txtHora"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/txtMontoto"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="156dp"
+        android:text="00:32:11"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/txtMontoto"
+        android:layout_width="97dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="47dp"
+        android:layout_marginEnd="37dp"
+        android:gravity="right"
+        android:text="$ 850"
+        android:textSize="18sp" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="wrap_content"
+        android:layout_height="2dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="83dp"
+        android:height="2dp"
+        android:background="#f2f2f2" />
+</RelativeLayout>

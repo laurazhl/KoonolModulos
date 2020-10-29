@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:sign="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Saldo a pagar $ 0.0"
+        android:textColor="#D68910"
+        android:textSize="26sp"
+        android:textStyle="bold"/>
+
+
+    <View
+        android:id="@+id/separador"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="1dp"
+        android:background="#D68910" />
+
+
+    <!--FECHA-->
+    <LinearLayout
+        android:layout_width="250dp"
+        android:layout_height="47dp"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txtFch"
+            android:layout_width="132dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:enabled="false"
+            android:gravity="center"
+            android:text=" Fecha a pagar:"
+            android:textColor="#D68910"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/fch"
+            android:layout_width="132dp"
+            android:layout_height="27dp"
+            android:layout_gravity="center"
+            android:enabled="false"
+            android:gravity="center"
+            android:textColor="#000000"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <com.kyanogen.signatureview.SignatureView
+        android:id="@+id/signature_view"
+        android:layout_width="match_parent"
+        android:layout_height="173dp"
+        sign:backgroundColor="#ffffff"
+        sign:enableSignature="true"
+        sign:penColor="#000000"
+        sign:penSize="5dp" />
+
+    <LinearLayout
+        android:layout_width="331dp"
+        android:layout_height="67dp"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/btnCancelar"
+            android:layout_width="133dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center"
+            android:background="#D68910"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:text="Cancelar"
+            android:textColor="@android:color/white"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/btnConfirmar"
+            android:layout_width="133dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center"
+            android:background="#D68910"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:text="Aceptar"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            android:layout_marginHorizontal="10dp"/>
+
+
+    </LinearLayout>
+
+</LinearLayout>

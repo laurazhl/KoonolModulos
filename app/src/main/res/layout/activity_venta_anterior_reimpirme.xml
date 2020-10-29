@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".venta_anterior_reimpirme">
+
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Venta *****"
+        android:textColor="@color/colorAccent"
+        android:textSize="30sp"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <LinearLayout
+        android:id="@+id/info"
+        android:layout_width="match_parent"
+        android:layout_height="27dp"
+        android:gravity="center_horizontal"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.058">
+
+
+        <TextView
+            android:id="@+id/textFecha"
+            android:layout_width="62dp"
+            android:layout_height="22dp"
+            android:layout_marginLeft="22dp"
+            android:enabled="false"
+            android:gravity="center"
+            android:text="Fecha:"
+            android:textColor="@color/colorAccent"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/Fecha"
+            android:layout_width="102dp"
+            android:layout_height="22dp"
+            android:layout_marginLeft="5dp"
+            android:text="dd/MM/yyyy"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/textHora"
+            android:layout_width="59dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="60dp"
+            android:enabled="false"
+            android:gravity="center"
+            android:text="Hora: "
+            android:textColor="@color/colorAccent"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/Hora"
+            android:layout_width="99dp"
+            android:layout_height="21dp"
+            android:layout_gravity="center"
+            android:layout_marginRight="32dp"
+            android:text="hh:mm:ss"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/vistalista2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="8dp"
+
+        android:layout_marginBottom="158dp"
+        app:layout_constraintBottom_toTopOf="@+id/separador"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.531"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/info"
+        app:layout_constraintVertical_bias="0.249" />
+
+    <!--<android.support.constraint.ConstraintLayout
+        android:id="@+id/infoVenta"
+        android:layout_width="413dp"
+        android:layout_height="37dp"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.76">-->
+
+
+    <View
+        android:id="@+id/separador"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="@color/colorAccent"
+        app:layout_constraintBottom_toTopOf="@+id/infoVenta1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/infoVenta1"
+        android:layout_width="189dp"
+        android:layout_height="31dp"
+        android:layout_below="@+id/text"
+        android:gravity="right"
+        android:orientation="horizontal"
+
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.772">
+
+        <TextView
+            android:id="@+id/textCajero"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:editable="false"
+            android:gravity="center"
+            android:text="  Cajero: "
+            android:textColor="#000000"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/Cajero"
+            android:layout_width="133dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:editable="false"
+            android:text="Karen Perez"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/infoVenta"
+        android:layout_width="224dp"
+        android:layout_height="30dp"
+        android:layout_below="@+id/text"
+        android:gravity="right"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.771">
+
+        <TextView
+            android:id="@+id/textSub"
+            android:layout_width="113dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:editable="false"
+            android:gravity="center"
+            android:text="Subtotal: $"
+            android:textColor="#000000"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/SubT"
+            android:layout_width="91dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:editable="false"
+            android:text="0.00"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/infoImpuestos"
+        android:layout_width="match_parent"
+        android:layout_height="31dp"
+        android:layout_below="@+id/text"
+        android:gravity="right"
+        android:orientation="horizontal"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.817">
+
+        <TextView
+            android:id="@+id/textImp"
+            android:layout_width="113dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:editable="false"
+            android:gravity="center"
+            android:text="Impuestos: $"
+            android:textColor="#000000"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/Impuesto"
+            android:layout_width="91dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:editable="false"
+            android:text="0.00"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/infoTotal"
+        android:layout_width="match_parent"
+        android:layout_height="31dp"
+        android:layout_below="@+id/text"
+        android:gravity="right"
+        android:orientation="horizontal"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.861">
+
+        <TextView
+            android:id="@+id/textTotal"
+            android:layout_width="85dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:text="Total: $"
+            android:textColor="#000000"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/Total"
+            android:layout_width="89dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="0.00"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/constraintLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="82dp"
+        android:layout_gravity="center"
+
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+        <Button
+            android:id="@+id/btnCancela"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:background="@color/colorCancela"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:gravity="center"
+            android:text="CANCELA VENTA"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/btnImprime2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/btnImprime2"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:background="@color/colorAccent"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:gravity="center"
+            android:paddingTop="0dp"
+            android:text="Pagar venta"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/btnCancela"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </android.support.constraint.ConstraintLayout>
+
+
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Registrar">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="633dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="328dp"
+                android:layout_height="38dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:text="Registrar nuevo usuario"
+                android:textAlignment="center"
+                android:textColor="#008577"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="203dp"
+                android:layout_height="201dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                app:srcCompat="@drawable/login"
+                tools:layout_editor_absoluteX="71dp"
+                tools:layout_editor_absoluteY="2dp" />
+
+
+            <EditText
+                android:id="@+id/editTextName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="12dp"
+                android:hint="Nombre(s)"
+                android:inputType="textCapCharacters"
+                android:textSize="12sp"
+                android:typeface="serif" />
+
+            <EditText
+                android:id="@+id/editxtAP"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="12dp"
+                android:hint="Apellido Paterno"
+                android:inputType="textCapCharacters"
+                android:textSize="12sp"
+                android:typeface="serif" />
+
+            <EditText
+                android:id="@+id/editxtAM"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="12dp"
+                android:hint="Apellido Materno"
+                android:inputType="textCapCharacters"
+                android:textSize="12sp"
+                android:typeface="serif" />
+
+
+            <EditText
+                android:id="@+id/editTextEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="12dp"
+                android:hint="Correo electrónico"
+                android:inputType="textEmailAddress"
+                android:textSize="12sp"
+                android:typeface="serif" />
+
+            <EditText
+                android:id="@+id/editNum"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="12dp"
+                android:hint="Número de teléfono"
+                android:inputType="number"
+                android:maxLength="10"
+                android:textSize="12sp"
+                android:typeface="serif" />
+
+            <EditText
+                android:id="@+id/editTextPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="12dp"
+                android:hint="Contraseña"
+                android:inputType="textPassword"
+                android:textSize="12sp"
+                android:typeface="serif" />
+
+            <EditText
+                android:id="@+id/editTextPassword2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="12dp"
+                android:hint="Confirmar contraseña"
+                android:inputType="textPassword"
+                android:textSize="12sp"
+                android:typeface="serif" />
+
+
+            <Button
+                android:id="@+id/buttonRegister"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:text="Registrar"
+                android:textSize="12sp"
+                android:typeface="serif" />
+
+            <TextView
+                android:id="@+id/textViewSignin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="¿Ya esta registrado? Entre aquí"
+                android:textAlignment="center"
+                android:textColor="#424242"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:typeface="serif" />
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

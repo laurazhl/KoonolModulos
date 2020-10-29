@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CodigoVerificacion"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/txtCodigo"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:gravity="center_horizontal"
+        android:text="Introduce el código de 6  dígitos que se envio a tu número de telefono, por parte de koonolmodulos"
+        android:textColor="#000000"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.023" />
+
+
+    <EditText
+        android:id="@+id/codigo"
+        android:layout_width="match_parent"
+        android:layout_height="43dp"
+        android:layout_below="@+id/txtCodigo"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:hint="--- --- "
+        android:inputType="number"
+        android:maxLength="6"
+
+        app:layout_constraintBottom_toTopOf="@+id/siguiente"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtCodigo"
+        app:layout_constraintVertical_bias="0.321" />
+
+    <Button
+        android:id="@+id/siguiente"
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:layout_below="@+id/codigo"
+        android:text="Verificar"
+        android:background="@color/colorAccent"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.2" />
+
+    <Button
+        android:id="@+id/mensaje"
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:layout_below="@+id/codigo"
+        android:text="Reenviar código"
+        android:background="@color/colorAccent"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/siguiente"
+        app:layout_constraintVertical_bias="0.016" />
+
+    <!--<Button
+        android:id="@+id/mensaje"
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:text="Verificar"
+        android:layout_below="@+id/siguiente"/>-->
+
+</android.support.constraint.ConstraintLayout>

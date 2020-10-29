@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:ignore="MissingDefaultResource">
+    <!--<ImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@drawable/imagenadvertencia"
+        android:layout_centerInParent="true"/>-->
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Alerta"
+        android:textColor="#D68910"
+        android:textSize="26sp"
+        android:textStyle="bold"/>
+
+
+    <ImageView
+        android:id="@+id/advertencia"
+        android:layout_width="250dp"
+        android:layout_height="80dp"
+        android:layout_below="@+id/textView"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="4dp"
+        android:src="@drawable/imagenadvertencia" />
+
+
+    <!--Mensaje-->
+    <LinearLayout
+        android:id="@+id/mensaje"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/advertencia"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="0dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="1dp"
+            android:enabled="false"
+            android:inputType="textCapSentences"
+            android:text=" ¿Desea cerrar la sesión?"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:gravity="center"/>
+
+    </LinearLayout>
+
+    <!--Botones-->
+    <LinearLayout
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mensaje"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="15dp"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/btnCancela4"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="5dp"
+            android:background="@color/colorCancela"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:paddingTop="0dp"
+            android:text="Cancelar"
+            android:textColor="@android:color/white"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/btnAceptar4"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="@color/colorAccent"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:paddingTop="0dp"
+            android:text="Aceptar"
+            android:textColor="@android:color/white"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+</RelativeLayout>
